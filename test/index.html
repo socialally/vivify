@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Air: Test Specifications</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+    <style>
+        #fixture, #mock {
+          position: absolute;
+          left: -2000px;
+          top: -2000px;
+        }
+
+        .dimension {
+          margin: 10px;
+          padding: 5px;
+          border: 1px solid black;
+          width: 100px;
+          height: 100px;
+        }
+
+        .css {
+          color: black;
+          background-color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <div id="fixture"></div>
+
+    <div id="mock">
+      <div id="blank"></div>
+      <div class="append"></div>
+      <div class="append-parent"></div>
+      <div class="append-parent"></div>
+      <div class="append-child"></div>
+      <div class="append-multi"></div>
+      <div class="attr" title="foo">
+        <span>a</span>
+        <span>b</span>
+        <span>c</span>
+      </div>
+      <div class="children">
+        <p><span>a</span></p>
+        <span>b</span>
+        <div><p>c</p></div>
+      </div>
+      <div class="class foo"></div>
+      <div class="clone"><span title="foo"><strong>foo</strong></span></div>
+      <div class="css"></div>
+      <div class="data"></div>
+      <div class="dimension"></div>
+      <div class="empty">
+        <span>a</span>
+        <span>b</span>
+        <span>c</span>
+      </div>
+      <div class="find">
+        <span>a</span>
+        <p><span>b</span></p>
+        <div><p><span>c</span></p></div>
+        <span>d</span>
+      </div>
+      <div class="first">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+      </div>
+      <div class="html">
+        <p>foo</p>
+      </div>
+      <div class="last">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+      </div>
+      <div class="prepend"></div>
+      <div class="prepend-parent"></div>
+      <div class="prepend-parent"></div>
+      <div class="prepend-child"></div>
+      <div class="prepend-multi"></div>
+      <div class="remove">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+      </div>
+      <div class="text">
+        <span>foo</span>
+      </div>
+    </div>
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script>
+      mocha.setup({
+        ui: 'bdd',
+        //ignoreLeaks: false,
+        globals: [],
+        asyncOnly: true
+      });
+    </script>
+    <script src="spec.js"></script>
+    <script>
+      if(window.mochaPhantomJS) {
+        mochaPhantomJS.run();
+      }else{
+        mocha.checkLeaks();
+        mocha.run();
+      }
+    </script>
+  </body>
+</html>
