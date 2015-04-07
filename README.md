@@ -23,14 +23,15 @@ Manipulates class names over time to allow animations to be declared as CSS3 tra
 
 ## Usage
 
-Designed to work with [browserify](http://browserify.org) by default, assuming you have configured the [browserify](http://browserify.org) `paths` option correctly:
-
 ```javascript
 var $ = require('air');
 $.plugin([
+  require('air/class'),
   require('vivify'),
   require('vivify/burst')
 ])
+
+$('element').burst();
 ```
 
 ## Install
