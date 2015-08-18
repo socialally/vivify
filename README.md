@@ -17,6 +17,8 @@ Table of Contents
 Vivify
 ======
 
+> `Stability: experimental`.
+
 Animation plugins for [air](https://github.com/socialally/air).
 
 Manipulates class names over time to allow animations to be declared as CSS3 transitions.
