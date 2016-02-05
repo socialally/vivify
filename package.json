@@ -2,11 +2,11 @@
   "name": "vivify",
   "description": "Animation plugins",
   "version": "0.2.2",
-  "stability": "experimental",
   "author": "muji <noop@xpm.io>",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/socialally/vivify.git"
+    "url": "git://github.com/tmpfs/vivify.git"
   },
   "main": "lib/vivify.js",
   "devDependencies": {
@@ -49,12 +49,8 @@
     "require": "lib",
     "links": "links.md",
     "toc": "Table of Contents",
-    "base": "https://github.com/socialally/vivify",
+    "base": "https://github.com/tmpfs/vivify",
     "partial": [
-      {
-        "ref": "stability",
-        "format": "> `Stability: %s`"
-      },
       {
         "inc": [
           "introduction.md",
