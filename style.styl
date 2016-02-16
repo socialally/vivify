@@ -1,0 +1,77 @@
+// blocks
+animated-block                      := {
+  -webkit-animation-duration        : 1s
+  animation-duration                : 1s
+  -webkit-animation-fill-mode       : both
+  animation-fill-mode               : both
+}
+
+animated-infinite-block             := {
+  -webkit-animation-iteration-count : infinite
+  animation-iteration-count         : infinite
+}
+
+animated-hinge-block                := {
+  -webkit-animation-duration        : 1s
+  animation-duration                : 1s
+}
+
+// rules
+.animated
+  {animated-block}
+
+.animated.infinite
+  {animated-infinite-block}
+
+.animated.hinge
+  {animated-hinge-block}
+
+// @stylint off
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+// @stylint on
+
+// rules
+.fadeIn
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+
+.fadeOut
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+
+// vars
+
+// @stylint off
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+// @stylint on
+
+// rules
+.flash
+  -webkit-animation-name    : flash
+  animation-name            : flash
