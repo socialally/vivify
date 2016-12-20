@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/tmpfs/vivify.git"
+    "url": "git://github.com/socialally/vivify.git"
   },
   "main": "lib/vivify.js",
   "devDependencies": {
@@ -49,7 +49,7 @@
     "require": "lib",
     "links": "links.md",
     "toc": "Table of Contents",
-    "base": "https://github.com/tmpfs/vivify",
+    "base": "https://github.com/socialally/vivify",
     "partial": [
       {
         "inc": [

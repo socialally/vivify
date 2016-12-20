@@ -6,7 +6,7 @@
 [browserify]: http://browserify.org
 [eslint]: http://eslint.org
 
-[zephyr]: https://github.com/tmpfs/zephyr
-[zephyr-plugins]: https://github.com/tmpfs/zephyr#plugins
+[zephyr]: https://github.com/socialally/zephyr
+[zephyr-plugins]: https://github.com/socialally/zephyr#plugins
 [mdp]: https://github.com/tmpfs/mdp
-[air]: https://github.com/tmpfs/air
+[air]: https://github.com/socialally/air
